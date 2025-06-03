@@ -1,13 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+/* body ทุกหน้า */
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(37, 37, 37);
+  font-family: "Montserrat", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  scroll-behavior: smooth;
+}
+
+/* Nev */
+nav {
+  background-color: rgb(37, 37, 37);
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+  filter: drop-shadow(10px 0 5px rgb(0, 0, 0));
+}
+
+/* Footer */
+footer {
+  background-color: rgb(37, 37, 37);
+  color: white;
+  padding: 20px;
+  font-weight: 500;
+  filter: drop-shadow(-10px 0 5px black);
+}
+
+/* Nav */
+img {
+  width: 100px;
+}
+
+/* Nav */
+h1 {
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+/* Nav */
+ul {
+  display: flex;
+  margin-left: auto;
+  font-weight: 600;
+}
+
+/* Nav */
+.li {
+  padding: 3px;
+  color: white;
+  border-radius: 5px;
+  width: 70px;
+  height: 30px;
+  text-align: center;
+  align-items: center;
+}
+
+/* Nav */
+.isActive-f {
+  background-color: blue;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Nav */
+.isActive-t:hover {
+  background-color: blue;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Home */
+h2 {
+  font-size: 30px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Home */
+.home-text {
+  color: white;
+  text-align: center;
+  margin: 100px 50px;
+  justify-content: center;
+}
+
+/* Home */
+.home-text p {
+  font-size: 16px;
+  width: 500px;
+  margin: 0 auto;
+}
+
+/* Home */
+.home {
+  display: flex;
+  margin: 60px 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Home */
+.home p {
+  width: 500px;
+  margin: 0 20px;
+  font-size: 12px;
+  color: white;
+}
+
+/* Home */
+.home-img {
+  border: 2px solid rgb(62, 62, 255);
+  background-color: black;
+  width: 90%;
+  height: 250px;
+  margin: 0 auto 50px;
+  display: flex;
+  border-radius: 10px;
+}
+
+/* Home */
+.home-section {
+  height: 120px;
+}
+
+.hone-rm {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Home */
+.home-box {
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+  margin: 0 15px;
+  background-color: rgb(0, 0, 0);
+  border: 2px solid white;
+}
+
+/* Home */
+.home-box:hover {
+  border: 2px solid rgb(57, 57, 255);
+}
+
+/* Home */
+.home-button {
+  text-align: center;
+  margin: 100px 0 150px;
+}
+
+/* Home */
+.home-but1 {
+  background-color: white;
+  color: black;
+  padding: 10px 30px;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
+/* Home */
+.home-but2 {
+  padding: 10px 25px;
+  border-radius: 10px;
+  margin: 0 10px;
+  border: 2px solid rgb(59, 45, 255);
+  color: rgb(255, 255, 255);
+}
+
+/* Home */
+.home-but1:hover {
+  background-color: rgb(61, 47, 255);
+  color: white;
+  filter: drop-shadow(0 0 30px rgb(116, 116, 116));
+}
+
+/* Home */
+.home-but2:hover {
+  background-color: rgb(61, 47, 255);
+  color: rgb(255, 255, 255);
+  filter: drop-shadow(0 0 30px rgb(116, 116, 116));
+}
+
+/* About */
+.about-nav {
+  background-color: rgb(37, 37, 37);
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 70px;
+  color: white;
+  padding: 13px;
+  z-index: 1;
+  filter: drop-shadow(10px 0 5px black);
+}
+
+/* About */
+.about-script {
+  height: 70px;
+}
+
+/* About */
+.about-nav-box {
+  margin: 0 10px;
+  width: 70px;
+  height: 25px;
+  text-align: center;
+}
+
+.about-nav-box:hover {
+  background-color: rgb(33, 33, 255);
+  width: 70px;
+  height: 25px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* About */
+.about-text {
+  text-align: center;
+  margin: 100px 50px;
+}
+
+/* About */
+.about-text p {
+  color: white;
+  font-size: 12px;
+}
+
+/* About */
+.about-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+/* About */
+.about-a {
+  color: white;
+  border: 2px solid white;
+  padding: 10px 30px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 50px;
+}
+
+/* About */
+.about-a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* About */
+.about-a-icon {
+  align-items: center;
+  margin: 2px 5px;
+  font-size: 20px;
+}
+
+/* About */
+.about-box-div {
+  border: 2px solid white;
+  background-color: black;
+  border-radius: 20px;
+  width: 200px;
+  height: 200px;
+  margin: 0 20px 60px;
+  color: white;
+  text-align: center;
+  padding-top: 190px;
+  font-weight: 500;
+}
+
+/* About */
+.about-box-div:hover {
+  border: 2px solid rgb(52, 52, 255);
+  color: rgb(52, 52, 255);
+}
+
+/* About */
+.shop-list {
+  border: 1px solid white;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Login */
+.login {
+  justify-content: center;
+  display: flex;
+}
+
+/* Login */
+.login-box {
+  width: 300px;
+  height: 450px;
+  border: 2px solid white;
+  justify-content: center;
+  border-radius: 20px;
+  margin: 135px 0 80px;
+}
+
+/* Login */
+.login-box-p {
+  text-align: center;
+  padding: 20px;
+  font-weight: 700;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+
+/* Login */
+.login-input {
+  margin: 15px 20px;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+/* Login */
+.login-logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Login */
+.login-icon {
+  margin: 0 10px;
+  font-size: 25px;
+}
+
+/* Login */
+.login-input-p {
+  margin: 0 50px;
+}
+
+/* Login */
+.login-input input {
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  width: 200px;
+  height: 30px;
+  color: white;
+  padding: 10px;
+}
+
+/* Login */
+.login-but {
+  background-color: rgb(255, 255, 255);
+  width: 230px;
+  height: 30px;
+  border-radius: 5px;
+  margin: 10px 35px 15px;
+}
+
+/* Login */
+.login-but:hover {
+  background-color: rgb(216, 216, 216);
+}
+
+/* Login */
+.login-but-2 {
+  border-radius: 5px;
+  border: 2px solid rgb(255, 255, 255);
+  color: white;
+  padding: 5px 87px;
+  margin-left: 35px;
+}
+
+/* Login */
+.login-but-2:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(255, 255, 255);
+}
+
+/* Login */
+.login-sign {
+  justify-content: center;
+  display: flex;
+  margin: 10px 25px 0;
+}
+
+/* Login */
+.login-icon-sign {
+  background-color: white;
+  height: 30px;
+  width: 105px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+/* Login */
+.login-icon-sign p {
+  margin-left: 10px;
+  font-weight: 500;
+  font-size: 10px;
+}
+
+/* Login */
+.login-fb {
+  color: rgb(11, 11, 255);
+}
+
+/* Login */
+.login-icon-sign:hover {
+  background-color: rgb(196, 196, 196);
+}
+
+/* Sign */
+.sign-box {
+  width: 300px;
+  height: 550px;
+  border: 2px solid white;
+  justify-content: center;
+  border-radius: 20px;
+  margin: 100px 0 15px;
+}
+
+/* Sign */
+.sign-but-2 {
+  border-radius: 5px;
+  border: 2px solid rgb(255, 255, 255);
+  color: white;
+  padding: 5px 90px;
+  margin-left: 35px;
+}
+
+/* Sign */
+.sign-but-2:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(255, 255, 255);
 }
