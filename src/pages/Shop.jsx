@@ -41,7 +41,7 @@ const Shop = () => {
           <div className="about-script"></div>
             <h2 className="about-text">Shop 2</h2>
              <div className="about-box">
-                <a href="#"div className="about-box-div"><br />Box 1 </a>
+                <a href="#" className="about-box-div"><br />Box 1 </a>
                 <a href="#" className="about-box-div"><br />Box 2</a>
                 <a href="#" className="about-box-div"><br />Box 3</a>
              </div> 
